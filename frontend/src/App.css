@@ -1,0 +1,13 @@
+/* Force the pointer cursor on all buttons and clickable inputs */
+button, 
+[role="button"],
+input[type="submit"],
+input[type="file"] {
+  cursor: pointer;
+}
+
+/* Ensure disabled buttons look "unclickable" */
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+}
